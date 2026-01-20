@@ -1,97 +1,47 @@
-# Muhammad Rahman Shiddiq Website
+# Muhammad Rahman Shiddiq – Portfolio Website
 
-Website portofolio modern untuk Jason Martin - Graphic Designer, dibuat dengan React.js berdasarkan desain yang diberikan.
+Website portofolio pribadi untuk **Muhammad Rahman Shiddiq**,  
+mahasiswa Sistem Informasi dengan minat di **Data Analysis, Machine Learning, dan AI Terapan**.
 
-## Fitur
+Website ini dibangun sebagai **single-page portfolio** untuk menampilkan profil, resume, dan project yang relevan dengan bidang data & AI.
 
-- **Responsive Design** - Tampil sempurna di desktop dan mobile
-- **Modern UI/UX** - Desain gelap dengan aksen biru cyan
-- **Single Page Application** - Navigasi smooth antar section
-- **4 Halaman Utama:**
-  - Home - Hero section dengan workspace image
-  - About - Profil dan deskripsi singkat
-  - Resume - Skills, experience, education, dan hobbies
-  - Portfolio - Galeri project terbaru
+---
 
-## Teknologi
+## ✨ Fitur Utama
 
-- React.js 18
-- CSS3 dengan Flexbox & Grid
-- Responsive Design
-- Modern JavaScript (ES6+)
+- **Responsive Design**  
+  Tampilan optimal di desktop dan mobile.
 
-## Cara Menjalankan
+- **Modern Dark UI**  
+  Desain gelap dengan aksen biru cyan yang profesional.
+
+- **Single Page Application (SPA)**  
+  Navigasi antar section menggunakan smooth scroll.
+
+- **Section Utama:**
+  - **Home** – Personal branding dan call-to-action
+  - **About** – Ringkasan profil dan latar belakang
+  - **Resume** – Hard skill, software skill, pengalaman magang, dan pendidikan
+  - **Portfolio** – Showcase project Data, Machine Learning, dan AI
+
+- **Download CV (PDF)**  
+  CV ATS-friendly dapat diunduh langsung dari website.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **React.js (v18)**
+- **CSS3** (Flexbox & Grid)
+- **JavaScript (ES6+)**
+- **React Icons**
+- **Single-page smooth scrolling**
+
+---
+
+## 🚀 Cara Menjalankan Project
 
 1. Install dependencies:
 
 ```bash
 npm install
-```
-
-2. Jalankan development server:
-
-```bash
-npm start
-```
-
-3. Buka browser di `http://localhost:3000`
-
-## Struktur Project
-
-```
-src/
-├── components/
-│   ├── Navbar.js      # Navigation component
-│   ├── Home.js        # Hero/landing page
-│   ├── About.js       # About section
-│   ├── Resume.js      # Skills & experience
-│   └── Portfolio.js   # Project gallery
-├── App.js             # Main app component
-├── App.css            # Global styles
-└── index.js           # Entry point
-```
-
-## Customization
-
-- Ganti gambar di komponen dengan URL gambar Anda sendiri
-- Update informasi personal di setiap komponen
-- Sesuaikan warna tema di `App.css`
-- Tambah/edit skills dan experience di `Resume.js`
-- Update portfolio items di `Portfolio.js`
-
-## Build untuk Production
-
-```bash
-npm run build
-```
-
-File production akan tersedia di folder `build/`.
-
-## Fitur Download CV
-
-Website ini dilengkapi dengan fitur download CV dalam format PDF yang dapat diakses melalui tombol "RESUME" di halaman utama.
-
-### Cara Kerja:
-
-1. Klik tombol "RESUME" di halaman Home
-2. PDF akan otomatis ter-generate dan ter-download
-3. File PDF berisi informasi lengkap:
-   - Header dengan nama dan profesi
-   - Informasi kontak
-   - About/deskripsi singkat
-   - Pengalaman kerja (5 perusahaan)
-   - Skills software design
-   - Pendidikan
-   - Bahasa yang dikuasai
-
-### Teknologi:
-
-- jsPDF library untuk generate PDF
-- Custom styling dengan background gelap dan aksen biru
-- Layout 2 kolom yang rapi dan profesional
-
-### Customization:
-
-- Edit file `src/utils/pdfGenerator.js` untuk mengubah konten CV
-- Sesuaikan warna, font, dan layout sesuai kebutuhan
-- Tambah section baru seperti sertifikasi atau project
