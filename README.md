@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Jason Martin Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website portofolio modern untuk Jason Martin - Graphic Designer, dibuat dengan React.js berdasarkan desain yang diberikan.
 
-## Available Scripts
+## Fitur
 
-In the project directory, you can run:
+- **Responsive Design** - Tampil sempurna di desktop dan mobile
+- **Modern UI/UX** - Desain gelap dengan aksen biru cyan
+- **Single Page Application** - Navigasi smooth antar section
+- **4 Halaman Utama:**
+  - Home - Hero section dengan workspace image
+  - About - Profil dan deskripsi singkat
+  - Resume - Skills, experience, education, dan hobbies
+  - Portfolio - Galeri project terbaru
 
-### `npm start`
+## Teknologi
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js 18
+- CSS3 dengan Flexbox & Grid
+- Responsive Design
+- Modern JavaScript (ES6+)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Cara Menjalankan
 
-### `npm test`
+1. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+2. Jalankan development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Buka browser di `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Struktur Project
 
-### `npm run eject`
+```
+src/
+├── components/
+│   ├── Navbar.js      # Navigation component
+│   ├── Home.js        # Hero/landing page
+│   ├── About.js       # About section
+│   ├── Resume.js      # Skills & experience
+│   └── Portfolio.js   # Project gallery
+├── App.js             # Main app component
+├── App.css            # Global styles
+└── index.js           # Entry point
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Customization
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ganti gambar di komponen dengan URL gambar Anda sendiri
+- Update informasi personal di setiap komponen
+- Sesuaikan warna tema di `App.css`
+- Tambah/edit skills dan experience di `Resume.js`
+- Update portfolio items di `Portfolio.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Build untuk Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+File production akan tersedia di folder `build/`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Fitur Download CV
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Website ini dilengkapi dengan fitur download CV dalam format PDF yang dapat diakses melalui tombol "RESUME" di halaman utama.
 
-### Code Splitting
+### Cara Kerja:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Klik tombol "RESUME" di halaman Home
+2. PDF akan otomatis ter-generate dan ter-download
+3. File PDF berisi informasi lengkap:
+   - Header dengan nama dan profesi
+   - Informasi kontak
+   - About/deskripsi singkat
+   - Pengalaman kerja (5 perusahaan)
+   - Skills software design
+   - Pendidikan
+   - Bahasa yang dikuasai
 
-### Analyzing the Bundle Size
+### Teknologi:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- jsPDF library untuk generate PDF
+- Custom styling dengan background gelap dan aksen biru
+- Layout 2 kolom yang rapi dan profesional
 
-### Making a Progressive Web App
+### Customization:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Edit file `src/utils/pdfGenerator.js` untuk mengubah konten CV
+- Sesuaikan warna, font, dan layout sesuai kebutuhan
+- Tambah section baru seperti sertifikasi atau project
