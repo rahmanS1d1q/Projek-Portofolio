@@ -28,7 +28,7 @@ const Home = ({ setActiveSection }) => {
           <div className="hero-buttons">
             {/* Download CV dari folder public/cv */}
             <a
-              href="/cv/CV_Muhammad-Rahman-Shiddiq.pdf"
+              href="/CV/CV_Muhammad-Rahman-Shiddiq.pdf"
               download
               className="btn"
             >
