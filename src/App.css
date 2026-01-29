@@ -668,3 +668,16 @@ body {
 .interest-text {
   line-height: 1.5;
 }
+/* Portfolio item link styling */
+.portfolio-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.portfolio-item a:hover {
+  color: inherit;
+}
