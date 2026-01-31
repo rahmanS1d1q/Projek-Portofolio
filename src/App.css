@@ -394,30 +394,121 @@ body {
   font-size: 20px;
 }
 
-/* Responsive */
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
-  .home-content,
-  .about-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .resume-content {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-
+  /* Navigation */
   .navbar {
     padding: 15px 20px;
   }
 
-  .home-container,
-  .about-container,
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    font-size: 12px;
+  }
+
+  /* Home Page Mobile */
+  .home-container {
+    padding: 120px 20px 20px;
+    min-height: 100vh;
+  }
+
+  .home-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+
+  .workspace-image {
+    height: 250px;
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  /* About Page Mobile */
+  .about-container {
+    padding: 120px 20px 20px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 300px;
+  }
+
+  /* Resume Page Mobile */
   .resume-container {
-    padding: 80px 20px 20px;
+    padding: 120px 20px 20px;
+  }
+
+  .resume-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .resume-section h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .skill-bar {
+    width: 100%;
+  }
+
+  .experience-item {
+    text-align: center;
+  }
+
+  .hobbies {
+    justify-content: center;
   }
 }
 /* Portfolio Page */
@@ -501,15 +592,20 @@ body {
   font-size: 0.9rem;
 }
 
-/* Additional responsive adjustments */
+/* Portfolio Mobile Responsive */
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .portfolio-item {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
+  }
+
+  .portfolio-item img {
+    height: 200px;
   }
 }
 /* Animated Background Effects */
@@ -680,4 +776,98 @@ body {
 
 .portfolio-item a:hover {
   color: inherit;
+}
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  /* Navigation */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 13px;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  /* Home Page Extra Small */
+  .home-container {
+    padding: 100px 15px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .btn {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .workspace-image {
+    height: 200px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  /* About Page Extra Small */
+  .about-container {
+    padding: 100px 15px 15px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 250px;
+  }
+
+  /* Resume Page Extra Small */
+  .resume-container {
+    padding: 100px 15px 15px;
+  }
+
+  .resume-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-item {
+    font-size: 14px;
+  }
+
+  .experience-item {
+    font-size: 14px;
+  }
+
+  /* Portfolio Page Extra Small */
+  .portfolio-container {
+    padding: 100px 15px 15px;
+  }
+
+  .portfolio-content h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-subtitle {
+    font-size: 1rem;
+  }
+
+  .portfolio-item img {
+    height: 180px;
+  }
 }
